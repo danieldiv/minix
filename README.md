@@ -34,7 +34,7 @@ Documentação teorica por ser encontrada em [Wiki](https://github.com/danieldiv
 
 - Implementado pelo nucleo `(kernel)` e usuário, abaixo será mostrado algumas das funções que implementam as configurações.
 
-- Kernel [src/so/minix/kernel](https://github.com/danieldiv/sistema-operacional-minix/tree/main/src/so/minix/kernel)
+- Kernel [src/so/minix/kernel](https://github.com/danieldiv/minix/tree/master/minix/kernel)
 
   - `proc.h` -> possui a tabela de procesos, faz a inclusao de (const.h) que inclue o (config.h)
   - `proc.c`-> faz a inclusao de (proc.h)
