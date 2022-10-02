@@ -1,7 +1,7 @@
 ![VM](https://img.shields.io/badge/VM-VirtualBox-success)
 ![ISO](https://img.shields.io/badge/ISO-Linux-red)
 
-Documentação teorica [Wiki](https://github.com/danieldiv/sistema-operacional-minix/wiki)
+Documentação teorica [Wiki](https://github.com/danieldiv/minix/wiki)
 
 # Funcionamento
 
