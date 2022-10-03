@@ -9,7 +9,30 @@ Documentação teorica por ser encontrada em [Wiki](https://github.com/danieldiv
 
 ## Camadas
 
-`Gabriel Oliveira Alves`
+<p align="justify">
+  O Minix é divido em 4 camadas principais: Camada de Kernel (Núcleo), camada de Drivers para dispostivos do Hardware, camada de Servidor e camada do Usuário.
+  <ol>
+  
+  <strong>
+    <li>
+      Kernel (Núcleo):
+    </li>
+  </strong>
+  <p align="justify">
+    Camada responsável por tratar serviços de "baixo nível" para o funcionamento do SO. Toda a parte de interrupções, <i>Traps</i>, gerenciamento de memória, escalonamento e comunicação com o hardware está nesta camada. A parte que lida com as interrupções a nível de Hardware é utilizado <i>Assembly</i>, todo o restante é escrito em <i>Linguagem C</i>.
+  </p>
+  
+  <strong>
+  <li>
+      Drivers:
+    </li>
+  </strong>
+  <p align="justify">
+    Todos os processos de I/O (Input/Output) estão nesta camada. O Disco, o Terminal, a Placa de Rede (Minix3 possui suporte a redes TCP/IP) e Relógios. Estes dispositivos em outros Sitemas Operacionais, são conhecidos como Drives de Dispositivo. No Minix, todos os processos desta camadas, estão ligados aos processos da primeira camada - ligados por código. A camada 1 e 2 juntas formam um programa único, chamado KERNEL.
+  </p>
+  </ol>
+  
+</p>
 
 ## Como baixar e instalar
 
