@@ -36,7 +36,64 @@ Documentação teorica por ser encontrada em [Wiki](https://github.com/danieldiv
 
 ## Como baixar e instalar
 
-`João Victor F Barros`
+### Download
+
+Partindo-se do princípio que o minix é um sistema operacional voltado para estudos e não para utilização real é coerente a ideia de instalá-lo em uma máquina virtual. Nesse caso será utilizado o `VirtualBox` da Oracle, que pode ser baixado <a href = "https://www.virtualbox.org/wiki/Downloads">aqui</a>. A próxima etapa é o download da .iso do Minix 3, a qual é encontrada no próprio <a href="https://wiki.minix3.org/doku.php?id=www:download:start">site do Minix</a>.
+
+### Requisitos
+
+A máquina virtual permite configurar quais recursos do hardware serão alocados para o sistema operacional visitante, no caso o Minix. Por ser um sistema leve e sem nem mesmo interface gráfica seus requsitos recomendados são bem fáceis de atender.
+
+#### Processador
+
+Segundo o site do SO um processador da família pentium da intel ou superior são suficidentes, assim dedicar apenas um núcleo do processador para essa máquina virtual é o suficiente.
+
+<img src = "https://github.com/JoaoVictorFBarros/iamgens_de_referencia_readme/blob/main/4.png" height="400em"></img>
+
+#### Memória
+
+Pela documentação do Minix 3 256 MB de RAM são suficientes para o sistema, porém considerando-se que um computador razoavelmente moderno possui pelo meno 4 GB de RAM dedicar 512 MB ou 1 GB para o SO garante um bom desempenho do mesmo sem comprometer o desempenho do computador.
+
+<img src = "https://github.com/JoaoVictorFBarros/iamgens_de_referencia_readme/blob/main/2.png" height="400em"></img>
+
+#### Armazenamento
+
+O Minix 3 recomenda no mínimo 2.2 GB de espaço em disco para poder utilizar todas as funcionalidades do mesmo, porém novamente, considerando-se que dispositivos de armazenamento modernos possuem no mínimo 128 GB, dedicar 3 ou 4 GB para o SO garante que o armazenamento não será um problema.
+
+Vale a pena observar que o Minix possui suporte apenas à dispositivos de armazenamento que utilizam barramento SATA (ou o mais antigo, IDE), assim SSDs do tipo NVME ou dispositivos USB não podem ser usados. Como nesse caso estamos instalando o Minix em uma VM (máquina virtual) basta configurar a partir dela o disco, idenpedente do barramento real utlizado.
+
+<img src = "https://github.com/JoaoVictorFBarros/iamgens_de_referencia_readme/blob/main/3.png" height="400em"></img>
+
+#### Periféricos
+
+Por se tratar de um SO voltado para o estudo de seu funcionamento, o Minix não possue suporte a muitos periféricos além do teclado, inclusive é recomendado destivar desativar o audio da máquina virtual para evitar problemas de comapatibilidade
+
+<img src = "https://github.com/JoaoVictorFBarros/iamgens_de_referencia_readme/blob/main/5.png" height="400em"></img>
+
+## Instalação
+
+Para iniciar o processo de instalação basta inserir o um disco virtual na VM com a .iso do Minix 3 e iniciar a máquina.
+
+<img src = "https://github.com/JoaoVictorFBarros/iamgens_de_referencia_readme/blob/main/6.png" height="400em"></img>
+
+O processo de instalação em si é bem simples:
+1. selecione a opção de "Regular Minix 3" 
+
+<img src = "https://github.com/JoaoVictorFBarros/iamgens_de_referencia_readme/blob/main/7.png" height="400em"></img>
+
+2. Após isso faça login com o "root" e dê o comando "setup".
+
+3. Nesse ponto o instalador pede o tipo de teclado usado, no caso do padrão brasileiro com a tecla "ç" é o "abnt2".
+
+4. O próximo passo é a partição do disco. Como já foi tudo configurado na máquina virtual basta usar o "automatic mode".
+
+5. Em seguida é pedido para definir o tamanho do bloco de sistema, que por padrão é de 4 kB.
+
+6. O último estágio é a configuração de rede, que também pode ser configurado automaticamente com a opção "1".
+
+Após isso a instalação está concluída, digite o comando "poweroff" para desligar a máquina, remova o disco com a .iso do Minix 3 e inicie ela novamente. Com isso já será possivel realizar login no sistema e utilizá-lo.
+
+<img src = "https://github.com/JoaoVictorFBarros/iamgens_de_referencia_readme/blob/main/8.png" height="400em"></img>
 
 ## Localizacao
 
