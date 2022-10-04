@@ -48,13 +48,13 @@ A máquina virtual permite configurar quais recursos do hardware serão alocados
 
 Segundo o site do SO um processador da família pentium da intel ou superior são suficidentes, assim dedicar apenas um núcleo do processador para essa máquina virtual é o suficiente.
 
-<img src = "https://github.com/JoaoVictorFBarros/iamgens_de_referencia_readme/blob/main/4.png" height="400em"></img>
+<img src = "https://github.com/danieldiv/minix/blob/master/imgs/prints_instalacao/4.png"></img>
 
 #### Memória
 
 Pela documentação do Minix 3 256 MB de RAM são suficientes para o sistema, porém considerando-se que um computador razoavelmente moderno possui pelo meno 4 GB de RAM dedicar 512 MB ou 1 GB para o SO garante um bom desempenho do mesmo sem comprometer o desempenho do computador.
 
-<img src = "https://github.com/JoaoVictorFBarros/iamgens_de_referencia_readme/blob/main/2.png" height="400em"></img>
+<img src = "https://github.com/danieldiv/minix/blob/master/imgs/prints_instalacao/2.png" height="400em"></img>
 
 #### Armazenamento
 
@@ -62,24 +62,24 @@ O Minix 3 recomenda no mínimo 2.2 GB de espaço em disco para poder utilizar to
 
 Vale a pena observar que o Minix possui suporte apenas à dispositivos de armazenamento que utilizam barramento SATA (ou o mais antigo, IDE), assim SSDs do tipo NVME ou dispositivos USB não podem ser usados. Como nesse caso estamos instalando o Minix em uma VM (máquina virtual) basta configurar a partir dela o disco, idenpedente do barramento real utlizado.
 
-<img src = "https://github.com/JoaoVictorFBarros/iamgens_de_referencia_readme/blob/main/3.png" height="400em"></img>
+<img src = "https://github.com/danieldiv/minix/blob/master/imgs/prints_instalacao/3.png" height="400em"></img>
 
 #### Periféricos
 
 Por se tratar de um SO voltado para o estudo de seu funcionamento, o Minix não possue suporte a muitos periféricos além do teclado, inclusive é recomendado destivar desativar o audio da máquina virtual para evitar problemas de comapatibilidade
 
-<img src = "https://github.com/JoaoVictorFBarros/iamgens_de_referencia_readme/blob/main/5.png" height="400em"></img>
+<img src = "https://github.com/danieldiv/minix/blob/master/imgs/prints_instalacao/5.png" height="400em"></img>
 
 ## Instalação
 
 Para iniciar o processo de instalação basta inserir o um disco virtual na VM com a .iso do Minix 3 e iniciar a máquina.
 
-<img src = "https://github.com/JoaoVictorFBarros/iamgens_de_referencia_readme/blob/main/6.png" height="400em"></img>
+<img src = "https://github.com/danieldiv/minix/blob/master/imgs/prints_instalacao/6.png" height="400em"></img>
 
 O processo de instalação em si é bem simples:
 1. selecione a opção de "Regular Minix 3" 
 
-<img src = "https://github.com/JoaoVictorFBarros/iamgens_de_referencia_readme/blob/main/7.png" height="400em"></img>
+<img src = "https://github.com/danieldiv/minix/blob/master/imgs/prints_instalacao/7.png" height="400em"></img>
 
 2. Após isso faça login com o "root" e dê o comando "setup".
 
@@ -93,7 +93,7 @@ O processo de instalação em si é bem simples:
 
 Após isso a instalação está concluída, digite o comando "poweroff" para desligar a máquina, remova o disco com a .iso do Minix 3 e inicie ela novamente. Com isso já será possivel realizar login no sistema e utilizá-lo.
 
-<img src = "https://github.com/JoaoVictorFBarros/iamgens_de_referencia_readme/blob/main/8.png" height="400em"></img>
+<img src = "https://github.com/danieldiv/minix/blob/master/imgs/prints_instalacao/8.png" height="400em"></img>
 
 ## Localizacao
 
