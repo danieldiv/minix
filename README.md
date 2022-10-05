@@ -73,32 +73,7 @@ Documentação teorica por ser encontrada em [Wiki](https://github.com/danieldiv
 
 ## Como baixar e instalar
 
-O processo de download e configuração da máquina virtual está detalhado na <a href="https://github.com/danieldiv/minix/wiki/3-Como-baixar-e-instalar"> página 3 da wiki</a>, bem como o download da .iso do Minix 3, após a conclusão dessa etapa a instalação via terminal está detalhada abaixo.
-
-## Instalação
-
-Para iniciar o processo de instalação basta inserir o um disco virtual na VM com a .iso do Minix 3 e iniciar a máquina.
-
-<img src = "https://github.com/danieldiv/minix/blob/master/imgs/prints_instalacao/6.png" height="400em"></img>
-
-O processo de instalação em si é bem simples:
-1. selecione a opção de "Regular Minix 3" 
-
-<img src = "https://github.com/danieldiv/minix/blob/master/imgs/prints_instalacao/7.png" height="400em"></img>
-
-2. Após isso faça login com o "root" e dê o comando "setup".
-
-3. Nesse ponto o instalador pede o tipo de teclado usado, no caso do padrão brasileiro com a tecla "ç" é o "abnt2".
-
-4. O próximo passo é a partição do disco. Como já foi tudo configurado na máquina virtual basta usar o "automatic mode".
-
-5. Em seguida é pedido para definir o tamanho do bloco de sistema, que por padrão é de 4 kB.
-
-6. O último estágio é a configuração de rede, que também pode ser configurado automaticamente com a opção "1".
-
-Após isso a instalação está concluída, digite o comando "poweroff" para desligar a máquina, remova o disco com a .iso do Minix 3 e inicie ela novamente. Com isso já será possivel realizar login no sistema e utilizá-lo.
-
-<img src = "https://github.com/danieldiv/minix/blob/master/imgs/prints_instalacao/8.png" height="400em"></img>
+O processo de download e instalação do Minix 3 bem como o download e configuração da máquina virtual está detalhado na <a href="https://github.com/danieldiv/minix/wiki/3-Como-baixar-e-instalar"> página 3 da wiki</a>.
 
 ## Localizacao
 
