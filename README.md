@@ -30,7 +30,44 @@ Documentação teorica por ser encontrada em [Wiki](https://github.com/danieldiv
   <p align="justify">
     Todos os processos de I/O (Input/Output) estão nesta camada. O Disco, o Terminal, a Placa de Rede (Minix3 possui suporte a redes TCP/IP) e Relógios. Estes dispositivos em outros Sitemas Operacionais, são conhecidos como Drives de Dispositivo. No Minix, todos os processos desta camadas, estão ligados aos processos da primeira camada - ligados por código. A camada 1 e 2 juntas formam um programa único, chamado KERNEL.
   </p>
+  
+   <strong>
+  <li>
+      Servidor:
+    </li>
+  </strong>
+  <p align="justify">
+    Esta camada é a responsável por toda a parte de gerenciamento de requisicões da camada de usuário. É ela que fornece os serviços não visíveis que são úteis para os processos de usuário. Como gerenciamento de memória e sistema de arquivos (FS). É a camada de Processos de Servidor que faz a ponte entre as camadas 1 e 2 com os serviços o que são ou não visíveis para o usuário. 
+  </p>
+  
+   <strong>
+  <li>
+      Usuário:
+    </li>
+  </strong>
+  <p align="justify">
+    Na quarta e ultima camada, que é a de mais "alto nível", temos todos os programas que, para funcionarem, utilizam os serviços fornecidos pela camada de Servidor. Como o intepretador de comando - no caso do Minix, é o Shell -, editores de texto, compiladores (cc, gcc, g++, perl, python...etc) entre outros programas a nível de usuário.
+  </p>
+  
   </ol>
+  
+  Após entender a função de cada uma das camadas, é evidente que o Minix3 é um Sistema Operacional de acesso hierárquico - o usúario ROOT(Admin) tem o acesso total as funcionalidades de cada camada. Uma boa forma de evidenciar o acesso das camadas é por meio dos repósitorios do Minix após a sua instalação (presente no próximo tópico a baixo).<br>
+  Para acessar qualquer camada, basta estar no diretório de Usuário <code>/usr</code>. Dentro de Usuário, no diretório "Source" <code>src</code> com caminho <code>/usr/src</code> basta escolher o diretório referente a camada. Abaixo está os respectivos caminhos.<br>
+  
+  <ul>    
+    <li>
+      <code>/usr/src/kernel</code> Camada de Núcleo.
+    </li>
+   <li>
+        <code>/usr/src/drivers</code> Camada de Drivers de dispostivo.
+    </li>
+    <li>
+        <code>/usr/src/servers</code> Camada Servidor ou Serviços.
+    </li>
+  </ul>
+  
+  A camada de usuário é o proprio diretório <code>/usr</code>.<br>
+  Para mais detalhes acerca do funcionamento de cada camada, olhar o Wiki.
   
 </p>
 
