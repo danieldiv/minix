@@ -73,7 +73,7 @@ Documentação teorica por ser encontrada em [Wiki](https://github.com/danieldiv
 
 ## Como baixar e instalar
 
-O processo de download e instalação do Minix 3 bem como o download e configuração da máquina virtual está detalhado na <a href="https://github.com/danieldiv/minix/wiki/3-Como-baixar-e-instalar"> página 3 da wiki</a>.
+O processo de download e instalação do Minix 3 bem como o download e configuração da máquina virtual está detalhado na <a href="https://github.com/danieldiv/minix/wiki/1-Como-baixar-e-instalar"> página 1 da wiki</a>.
 
 ## Localizacao
 
