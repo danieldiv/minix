@@ -110,7 +110,7 @@ O processo de download e instalação do Minix 3 bem como o download e configura
 ## Modificacoes
 
 <p align="justify">
-Propôs-se alterar o código do MINIX3 a fim de mudar a sua política de escalonamento para o agendamento por sorteio. De forma geral, esse método aloca vários “tickets” para processos que variam de acordo com prioridades, tempos de execução conhecidos ou estimados, entre outros. Quando deve-se executar um processo, sorteia-se um tíquete, e os que tiverem mais quantidades terão maior possibilidade de
+Propôs-se alterar o código do MINIX3 a fim de mudar a sua política de escalonamento para o agendamento por sorteio. De forma geral, esse método aloca vários “tickets” para processos que variam de acordo com prioridades, tempos de execução conhecidos ou estimados, entre outros. Quando deve-se executar um processo, sorteia-se um tíquete, e os que tiverem mais tíquetes terão maior possibilidade de
 serem sorteados.
  </p>
 
